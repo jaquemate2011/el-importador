@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Importados Mariano</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Importados Mariano</h1>
+    <p>Productos importados a precios accesibles</p>
+  </header>
+
+  <section class="productos">
+    <div class="producto">
+      <img src="img/producto1.jpg" alt="Producto 1">
+      <h2>Mini Parlante Bluetooth</h2>
+      <p>Sonido potente, tamaño compacto.</p>
+      <p><strong>Precio unitario:</strong> $3.500</p>
+      <p><strong>Precio por 5 unidades:</strong> $15.000</p>
+      <button onclick="comprarMP('producto1')">Comprar con MercadoPago</button>
+      <button onclick="mostrarTransferencia()">Transferencia Bancaria</button>
+    </div>
+  </section>
+
+  <div id="transferencia" style="display:none;">
+    <h3>Datos para transferencia</h3>
+    <p>Banco: Santander</p>
+    <p>CBU: 0000003100012345678901</p>
+    <p>Alias: importados.mariano</p>
+    <p>Enviar comprobante a: ventas@importadosmariano.com</p>
+  </div>
+
+  <script src="productos.js"></script>
+</body>
+</html>
